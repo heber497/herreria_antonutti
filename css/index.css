@@ -1,0 +1,433 @@
+*   {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html{
+  font-size: 62.5%;
+}
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  height: auto;
+  background-color: darkgray;
+  font-family: 'Poppins', sans-serif;
+}
+img {
+  width: 100%;
+  
+}
+
+
+/* COMIENZO DEL HEADER */
+
+header {
+display: flex;
+justify-content:space-around;
+padding: 20px 0;
+align-items: center;
+border-bottom: 2px solid black;
+}
+header nav .menu{
+  display: flex;
+  gap: 2em;
+}
+
+header .navegacion{
+  flex-basis: 60%;
+  display:flex;
+  justify-content: space-between;
+}
+
+
+header .header__logo {
+  flex-basis: 40%;
+  
+}
+
+header .header__img {
+max-width: 200px; 
+margin-left: 2rem; 
+}
+
+
+.menu {
+  background-color: moccasin;
+  border: solid;
+  font-size: 40px; 
+  padding: 10px;
+  display:flex;
+  list-style-type:none;
+}
+
+.menu .menu__link {
+  font-size:1em;
+  color: maroon;
+}
+/* FIN DEL HEADER */
+
+/* INICIO DE MAIN */
+.contenedora{
+  max-width: 1200px;
+  margin: 0 auto;
+  gap:10rem;
+  }
+  /* FIN DE MAIN */
+
+/*COMIENZO DEL INDEX */
+
+.bienvenida{
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+} 
+
+.entrada__baner {
+  width: 100%;
+  height: 60%;
+  
+}
+
+.presentacion {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  border: 2px;
+  }
+
+.pregunta {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.somos {
+  width:100%; 
+  height:45%;
+  padding: 10px auto
+}
+
+.perforando {
+  width: 400px;
+  height: 500px;
+  padding: 4px auto; 
+  margin-top: 40px;
+}
+
+
+.resenia{
+  font-size: 20px;
+  width: 300px;
+  height: 300px; 
+  padding: 2px auto;
+  margin: 2px;
+  }
+
+
+.trabajos{
+  width: 100%;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  gap: 3px;
+  
+  
+}
+
+.entrada {
+  width: 40%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+
+.trabajos__soldador{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 24px 24px 24px 24px;
+  
+}
+
+.trabajos__perfil{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 24px 24px 24px 24px;
+}
+
+.trabajos__regla {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 24px 24px 24px 24px;
+}
+
+.trabajos__tarjetas{
+ width:400px;
+ height: 400px;
+ box-sizing: content-box;
+ margin-left: auto;
+ margin-right: auto;
+}
+ /* COMIENZO DE GRID INDEX */
+.contenedora{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 2rem 2rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "bienvenida bienvenida trabajos"
+      "presentacion presentacion trabajos"
+      "presentacion presentacion trabajos";
+  }
+
+  .bienvenida { grid-area: bienvenida; }
+  
+  .trabajos { grid-area: trabajos; }
+  
+  .presentacion{ grid-area: presentacion;}
+
+
+
+/* FIN DEL INDEX */
+
+/*COMIENZO DE LA PAGINA NOSOTROS*/
+#nosotros {
+ margin: 0 auto;
+ padding: 200px auto;
+ margin: 25px auto;
+ width: 500px;
+ height: auto;
+ border: 2px;
+ font-size: 30px;
+ background-position: top 10px;
+}
+
+.contenedor {
+ width: 600px;
+ height: 600px;
+ padding: 30px; 
+ border: solid 2px;
+ background-position: center;
+ box-sizing: border-box;
+}
+ 
+.contenedor__diseñador {
+ width: 100%;
+ height: 100%;
+ padding: 24px;
+ box-sizing: border-box;
+}
+
+.texto{
+ width: 600px;; 
+ height: 300px; 
+ padding: 30px;
+}
+  
+.contenedor__equipo {
+ width: 100%;
+ height: 0 auto;
+ padding: 24px;
+ box-sizing: border-box;
+}
+/* FIN DE LA PAGINA NOSOTROS*/
+     
+ /* INICIO de ALUMINIO y HERRERIA */
+
+   .anunciado {
+     font-size: 20px;
+     padding: 50px; 
+    }
+    
+    picture{
+      width: 100%;
+      height: 100%;
+      
+       }
+
+  .barandal{
+    width:100%; 
+    height:100%;
+   }
+  
+   .panel{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .percianas {
+    width: 100%;
+      height: 100%;
+    } 
+    
+    .puerta {
+      width: 100%;
+      height: auto;
+      } 
+    
+    .ventanasimple{
+      width: 100%;
+      height: auto;
+        
+    } 
+    
+    .ventanas{
+      width:100%;
+      height:40%;
+        
+    }  
+  
+.herreria__grilla{
+  width:100%;
+  height:100%;
+  border:2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.herreria__separador{
+  width:200px; 
+  height:200px;
+  padding: 5px auto;
+  margin-left:auto;
+  margin-right:auto ;
+}
+      
+    
+  
+   
+    
+    
+    /* INICIO GRID DE ALUMINIO y HERRERIA  */
+ .ventas { 
+    max-width:100%;
+    height: 50%;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "barandal barandal panel panel percianas percianas"
+      "barandal barandal panel panel percianas percianas"
+      "puerta puerta ventanasimple ventanasimple ventanas ventanas"
+      ". . . . ventanas ventanas";
+  }
+  
+  .panel { grid-area: panel; }
+  
+  .percianas { grid-area: percianas; }
+  
+  .puerta { grid-area: puerta; }
+  
+  .ventanasimple { grid-area: ventanasimple; }
+  
+  .ventanas { grid-area: ventanas; }
+  
+  .barandal { grid-area: barandal; }
+  
+
+/* FIN DE GRTID ALUMINIO y HERRERIA */
+
+/* FIN DE ALUMINIO Y HERRERAIA */
+
+/* INICIO DE NOSOTROS */
+
+#contacto {
+ width: 1800px ;
+ height: 700px;
+ border: 2px; 
+ margin-top: 15px;
+}
+
+.llamada {
+ width:700px;
+ height: 500px;
+}
+
+.formulario {
+ width: 700px;
+ height: 500px;
+ font-size: 50px;
+ display: inline-block;
+}
+
+input {
+ width: 250px ;
+ height: 40px; 
+}
+
+form {
+ width: 600px ;
+ height: 400px;
+ display: inline-block; 
+ background-position: center;
+} 
+
+
+/* FOOTER */
+
+.footer{
+  width:100%;
+  height:100%;
+  background-color: moccasin;
+  font-size: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  
+}
+  
+/* FIN DEL FOOTER*/
+/* media */
+
+@media screen and (max-width: 1270px) {
+  header{
+flex-direction:column;
+gap: 2rem;
+
+}
+ }
+
+
+@media screen and (max-width: 750px){
+  .contenedora {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-template-rows: 1fr 1fr ;
+      gap: 1em;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "bienvenida bienvenida "
+        "trabajos trabajos"
+        "presentacion presentacio";
+    }
+  
+    .bienvenida { grid-area: bienvenida; }
+    
+    .trabajos { grid-area: trabajos; }
+    
+    .presentacion{ grid-area: presentacion;}
+    
+  }
+
+@media screen and (max-width: 1100px){ 
+  header nav .menu {
+    display:flex;
+    flex-direction:column;
+  gap: 2rem;
+  }
+}
+
+
+ 
+  
