@@ -30,21 +30,23 @@ justify-content:space-around;
 padding: 20px 0;
 align-items: center;
 border-bottom: 2px solid black;
+
 }
+
 header nav .menu{
   display: flex;
   gap: 2em;
 }
 
 header .navegacion{
-  flex-basis: 60%;
+  flex-basis: 80%;
   display:flex;
   justify-content: space-between;
 }
 
 
 header .header__logo {
-  flex-basis: 40%;
+  flex-basis: 20%;
   
 }
 
@@ -59,97 +61,70 @@ margin-left: 2rem;
   border: solid;
   font-size: 40px; 
   padding: 10px;
-  display:flex;
   list-style-type:none;
+}
+
+.menu__list:hover {
+ background-color: aqua;
+ transition: background-color 2s;
+
 }
 
 .menu .menu__link {
   font-size:1em;
   color: maroon;
 }
+
+h1{
+  color: moccasin;
+  font-size: 40px;
+  padding: 2px; 
+
+}
+
 /* FIN DEL HEADER */
 
-/* INICIO DE MAIN */
-.contenedora{
-  max-width: 1200px;
-  margin: 0 auto;
-  gap:10rem;
-  }
-  /* FIN DE MAIN */
+
 
 /*COMIENZO DEL INDEX */
 
 .bienvenida{
   width: 100%;
-  height: 50%;
-  font-size: 20px;
+  height: 100%;
+  font-size: 30px;
 } 
 
 .entrada__baner {
   width: 100%;
-  height: 60%;
-  
-}
-
-.presentacion {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-  width: 100%;
   height: 100%;
-  margin: 10px;
-  border: 2px;
+  margin: 20px;
   }
 
-.pregunta {
-  font-size: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.somos {
-  width:100%; 
-  height:45%;
-  padding: 10px auto
-}
-
-.perforando {
-  width: 400px;
-  height: 500px;
-  padding: 4px auto; 
-  margin-top: 40px;
-}
-
-
-.resenia{
-  font-size: 20px;
-  width: 300px;
-  height: 300px; 
-  padding: 2px auto;
-  margin: 2px;
-  }
 
 
 .trabajos{
+  font-size: 10px;
   width: 100%;
   height: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  gap: 3px;
-  
-  
+  display: grid;
+  justify-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
 }
 
-.entrada {
-  width: 40%;
-  height: 30%;
-  margin-left: auto;
-  margin-right: auto ;
-}
 
+.trabajos__cartas {
+  height:100%;
+  width: 100%;
+  align-self: stretch;
+ 
+
+}
 
 .trabajos__soldador{
   width: 300px;
   height: 300px;
   margin: 20px;
-  padding: 24px 24px 24px 24px;
+  padding: 24px;
   
 }
 
@@ -157,41 +132,87 @@ margin-left: 2rem;
   width: 300px;
   height: 300px;
   margin: 20px;
-  padding: 24px 24px 24px 24px;
+  padding: 24px;
+  
+ 
 }
 
 .trabajos__regla {
   width: 300px;
   height: 300px;
   margin: 20px;
-  padding: 24px 24px 24px 24px;
+  padding: 24px;
+  
 }
 
-.trabajos__tarjetas{
- width:400px;
- height: 400px;
- box-sizing: content-box;
- margin-left: auto;
- margin-right: auto;
+.trabajos__titulo{
+ margin:25px;
+ font-size: 40px; 
 }
+
+.trabajos__texto {
+  margin: 25px;
+  font-size: 15px;
+}
+
+.presentacion {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  width: 100%;
+  height: 75%;
+ 
+  }
+
+  .somos {
+    width:100%; 
+    height:100%;
+    padding:2em;
+    border: 2em;
+  }
+
+.somos__pregunta {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.somos__perforando {
+  width: 100%;
+  height: 50%;
+  padding: 4px auto; 
+  margin-top: 40px;
+  
+}
+
+.somos__resenia{
+  font-size: 20px;
+  width: 100%;
+  height: 100%; 
+  padding: 2px auto;
+  border: 2em 2em 2em 2em ;
+  }
  /* COMIENZO DE GRID INDEX */
-.contenedora{
+.contenedora {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
     display: grid;
+    grid-column-gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
     gap: 2rem 2rem;
+    align-items: center;
     grid-auto-flow: row;
     grid-template-areas:
       "bienvenida bienvenida trabajos"
-      "presentacion presentacion trabajos"
-      "presentacion presentacion trabajos";
+      "presentacion presentacion presetacion";
   }
 
   .bienvenida { grid-area: bienvenida; }
   
   .trabajos { grid-area: trabajos; }
   
-  .presentacion{ grid-area: presentacion;}
+  .presentacion { grid-area: presentacion;}
 
 
 
@@ -199,43 +220,40 @@ margin-left: 2rem;
 
 /*COMIENZO DE LA PAGINA NOSOTROS*/
 #nosotros {
- margin: 0 auto;
- padding: 200px auto;
- margin: 25px auto;
- width: 500px;
- height: auto;
- border: 2px;
+ width: 100%;
+ height: 100%;
+ margin-left: 0 auto;
+ margin-right: 0 auto;
  font-size: 30px;
- background-position: top 10px;
+ display:flex;
+ flex-direction: column;
+ justify-content:center ;
 }
 
 .contenedor {
- width: 600px;
- height: 600px;
- padding: 30px; 
- border: solid 2px;
- background-position: center;
- box-sizing: border-box;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
 }
  
 .contenedor__diseñador {
- width: 100%;
- height: 100%;
- padding: 24px;
- box-sizing: border-box;
+ width: 600px;
+ height: 600px;
+ 
+
+}
+
+
+.contenedor__equipo {
+  width:600px;
+  height:600px;
 }
 
 .texto{
  width: 600px;; 
  height: 300px; 
  padding: 30px;
-}
-  
-.contenedor__equipo {
- width: 100%;
- height: 0 auto;
- padding: 24px;
- box-sizing: border-box;
 }
 /* FIN DE LA PAGINA NOSOTROS*/
      
@@ -339,7 +357,7 @@ margin-left: 2rem;
 
 /* FIN DE ALUMINIO Y HERRERAIA */
 
-/* INICIO DE NOSOTROS */
+/* INICIO DE CONTACTO */
 
 #contacto {
  width: 1800px ;
@@ -371,6 +389,8 @@ form {
  display: inline-block; 
  background-position: center;
 } 
+
+/* FIN DE CONTACTOS */
 
 
 /* FOOTER */
