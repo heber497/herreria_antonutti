@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" type="jpg" href="../img/logo.navegador.png">
 </head>
-
 <body>
     <header>
         <picture class="header__logo">
-            <img img class="header__img" src="../img/logo.png" alt="logo de herreria amtonutti">
-        </picture>        
+            <img class="header__img" src="../img/logo.png" alt="logo de herreria amtonutti">
+        </picture> 
         <nav class="navegacion">
             <ul class="menu">
                  <li class="menu__list">
@@ -28,43 +29,52 @@
             </ul>
          </nav>    
     </header>
-    <main >
-        <div>
-            <article class="anunciado">
-                     <h1>aluminio</h1>
+    
+    <main class="container-lg">
+         <article class="seccion__aluminio animate__animated animate__fadeInLeft">
+                     <h1 class="solucion">aluminio</h1>
                      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit facere, sequi, deserunt perferendis dicta neque quidem dignissimos facilis architecto distinctio quibusdam beatae delectus excepturi quo labore. Qui voluptas cumque pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aut maiores laboriosam ex numquam asperiores delectus exercitationem a, et corrupti ab facilis quasi deleniti voluptatem quaerat quod odit cum similique?</p>
-            </article>
-       </div>  
-        <section class="ventas">
-                            <picture class="barandal">
-                                              <img src="../img/aluminio.barandal.jpg" alt="">
-                            </picture>
-                            <picture class="panel">
-                                              <img src="../img/aluminio.panel.jpg" alt="">
-                            </picture>
-                            <picture class="percianas">
-                                              <img src="../img/aluminio.percianas.jpg" alt="">
-                            </picture>
-                            <picture class="puerta">
-                                              <img src="../img/aluminio.puerta.png" alt="">
-                            </picture>
-                            <picture class="ventanasimple">
-                                              <img src="../img/aluminio.ventana.simple.jpg" alt="">
-                            </picture>
-                            <picture class="ventanas">
-                                              <img src="../img/aluminio.ventanas.jpg" alt="">
-                            </picture>            
-        </section>
+        </article>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            
+            
+            <div class="carousel-inner px-5">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../img/aluminio.barandal.png" class="d-block w-60" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../img/aluminio.puerta.jpg" class="d-block w-60" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/aluminio.ventanas.png" class="d-block w-60" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        
+       
    </main>
    <br>
    <footer class="footer">
-    <section >
+    <section>
             <div class="encabezado">            
                                    <h3 class="encabezado__horarios">horarios: de lunes a viernes de 08:00 AM a 19:00 PM</h3>
                                    <h3 class="encabezado__direccion">direcion:calle123</h3>
-            </div>   
+            </div>
+            <div class="alert alert-danger" role="alert">
            <p>esta pagina web es sin fines de lucro . todos los derechos reservados</p>
+        </div>
+
     </section>
-</footer>
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

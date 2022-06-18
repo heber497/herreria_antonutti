@@ -13,19 +13,24 @@ a{
 body {
   width: 100%;
   height: auto;
-  background-color: darkgray;
+  background-size:cover;
+  background-color:#87847A;
   font-family: 'Poppins', sans-serif;
 }
 img {
   width: 100%;
   
 }
-
+ .header__logo {
+  width: 100%;
+  height: 100%;
+}
 
 /* COMIENZO DEL HEADER */
 
-header {
+body header {
 display: flex;
+background-color: #665656;
 justify-content:space-around;
 padding: 20px 0;
 align-items: center;
@@ -33,7 +38,7 @@ border-bottom: 2px solid black;
 
 }
 
-header nav .menu{
+header nav  .menu{
   display: flex;
   gap: 2em;
 }
@@ -50,13 +55,25 @@ header .header__logo {
   
 }
 
+
 header .header__img {
-max-width: 200px; 
-margin-left: 2rem; 
+max-width: 200px;
+display: flex;  
+margin-left: 2rem;
+box-shadow:
+  3px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  7.2px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  13.6px 12.5px 10px rgba(0, 0, 0, 0.035),
+  24.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  45.5px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  109px 100px 80px rgba(0, 0, 0, 0.07)
+; 
+}
+.menu ul li a {
+  list-style-type:none;
 }
 
-
-.menu {
+header nav .menu {
   background-color: moccasin;
   border: solid;
   font-size: 40px; 
@@ -65,7 +82,7 @@ margin-left: 2rem;
 }
 
 .menu__list:hover {
- background-color: aqua;
+ background-color: #5B474A;
  transition: background-color 2s;
 
 }
@@ -73,14 +90,25 @@ margin-left: 2rem;
 .menu .menu__link {
   font-size:1em;
   color: maroon;
+  list-style-type:none;
+
 }
 
-h1{
+.solucion {
   color: moccasin;
   font-size: 40px;
-  padding: 2px; 
-
+  padding: 2px;
+  margin: 5px; 
 }
+
+  section h2 {
+ font-size: 40px;
+ padding: 5px;
+ margin: 5px; 
+ justify-items:center;
+}
+
+ 
 
 /* FIN DEL HEADER */
 
@@ -88,35 +116,60 @@ h1{
 
 /*COMIENZO DEL INDEX */
 
+
+
+.fondo__completo {
+width: 100%;
+height: 50%;
+position:static
+}
 .bienvenida{
   width: 100%;
   height: 100%;
   font-size: 30px;
+  display: grid;
+  justify-items: center;
 } 
 
-.entrada__baner {
+.entrada__baner{
   width: 100%;
   height: 100%;
-  margin: 20px;
+  
+ 
+  
+  }
+ 
+  .card { 
+   margin-left: auto;
+   margin-right: auto;
+   
   }
 
+.card-body{
+  background-color: #665656;
+  font-size: 35px;
+  border: solid 2px black;
+ 
+}
 
 
-.trabajos{
+.trabajos {
   font-size: 10px;
   width: 100%;
   height: 100%;
+  text-align: center;
   display: grid;
   justify-items: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
 }
 
 
-.trabajos__cartas {
+.trabajos__cartas{
   height:100%;
   width: 100%;
   align-self: stretch;
- 
+  background-size:cover;
+  
 
 }
 
@@ -125,6 +178,14 @@ h1{
   height: 300px;
   margin: 20px;
   padding: 24px;
+  background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+border: 2px solid black;
+  
   
 }
 
@@ -133,7 +194,13 @@ h1{
   height: 300px;
   margin: 20px;
   padding: 24px;
-  
+  background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+border: 2px solid black;  
  
 }
 
@@ -142,12 +209,20 @@ h1{
   height: 300px;
   margin: 20px;
   padding: 24px;
+  background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+border: 2px solid black;  
   
 }
 
 .trabajos__titulo{
  margin:25px;
- font-size: 40px; 
+ font-size: 40px;
+  
 }
 
 .trabajos__texto {
@@ -155,64 +230,58 @@ h1{
   font-size: 15px;
 }
 
-.presentacion {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-  width: 100%;
-  height: 75%;
- 
-  }
 
-  .somos {
+  .presentacion {
     width:100%; 
     height:100%;
-    padding:2em;
-    border: 2em;
+    display:grid;
+    justify-items: center;
+    
+    
+
+  
   }
 
-.somos__pregunta {
+.presentacion__pregunta {
   font-size: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  
+ }
 
 
-.somos__perforando {
-  width: 100%;
-  height: 50%;
-  padding: 4px auto; 
-  margin-top: 40px;
+.presentacion__perforando {
+  width: 75%;
+  height: 75%;
+ 
   
 }
 
-.somos__resenia{
+.presentacion__resenia {
   font-size: 20px;
   width: 100%;
   height: 100%; 
-  padding: 2px auto;
-  border: 2em 2em 2em 2em ;
+  
   }
  /* COMIENZO DE GRID INDEX */
-.contenedora {
-    max-width: 1200px;
+.container {
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     display: grid;
-    grid-column-gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows:  1fr 0.5fr;
     gap: 2rem 2rem;
     align-items: center;
     grid-auto-flow: row;
     grid-template-areas:
       "bienvenida bienvenida trabajos"
-      "presentacion presentacion presetacion";
+      "presentacion presentacion presentacion";
   }
 
   .bienvenida { grid-area: bienvenida; }
   
   .trabajos { grid-area: trabajos; }
   
-  .presentacion { grid-area: presentacion;}
+  .presentacion { grid-area: presentacion; }
 
 
 
@@ -259,49 +328,64 @@ h1{
      
  /* INICIO de ALUMINIO y HERRERIA */
 
-   .anunciado {
-     font-size: 20px;
-     padding: 50px; 
+  .aluminio{
+     max-width:1200px;
+     height:100%;
+     margin: 0 auto;
+    
+    }
+   .seccion__aluminio {
+    padding: 50px;
+    font-size: 35px;
+    }    
+   
+    .d-block{
+      height:80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .carousel-control-prev{
+      margin-left: auto;
+      margin-right: auto;
     }
     
-    picture{
-      width: 100%;
-      height: 100%;
-      
-       }
-
-  .barandal{
-    width:100%; 
-    height:100%;
-   }
+    .carousel-control-next{
+      margin-left: auto;
+      margin-right: auto;
+    }
+   /* .galeria .galeria__panel .galeria__imagen:hover{
   
-   .panel{
-    width: 100%;
-    height: 100%;
+    transform: scale( 1.2 );
+   
   }
   
-  .percianas {
-    width: 100%;
-      height: 100%;
+  .galeria .galeria__percianas .galeria__imagen:hover {
+  
+    transform: scale( 1.2 );
+   
     } 
     
-    .puerta {
-      width: 100%;
-      height: auto;
-      } 
     
-    .ventanasimple{
-      width: 100%;
-      height: auto;
-        
+    .galeria .galeria__ventanasimple .galeria__imagen:hover{
+    
+      
+      transform: scale( 1.2 );
+          
     } 
     
-    .ventanas{
-      width:100%;
-      height:40%;
-        
+    .galeria .galeria__ventanas .galeria__imagen:hover{
+    transform: scale( 1.2 );
+       
     }  
   
+    .galeria .galeria__imagen{
+     width: 100%;
+     height:100%;
+     transition: transform 0.7s;
+   
+    
+    }  */
+
 .herreria__grilla{
   width:100%;
   height:100%;
@@ -317,40 +401,44 @@ h1{
   padding: 5px auto;
   margin-left:auto;
   margin-right:auto ;
-}
-      
-    
   
-   
+}
     
-    
+#carouselExampleInterval{
+  height: 500px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+
+}
+       
     /* INICIO GRID DE ALUMINIO y HERRERIA  */
- .ventas { 
-    max-width:100%;
-    height: 50%;  
+ /* .galeria { 
+    width:100%;
+    height: 100%;  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1em 1em;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 2em 2em;
     grid-auto-flow: row;
     grid-template-areas:
-      "barandal barandal panel panel percianas percianas"
-      "barandal barandal panel panel percianas percianas"
-      "puerta puerta ventanasimple ventanasimple ventanas ventanas"
-      ". . . . ventanas ventanas";
+      "galeria__barandal galeria__barandal galeria__panel galeria__panel galeria__percianas galeria__percianas"
+      "galeria__puerta galeria__puerta galeria__ventanasimple galeria__ventanasimple galeria__ventanas galeria__ventanas";
   }
   
-  .panel { grid-area: panel; }
+  .galeria__panel { grid-area: galeria__panel; }
   
-  .percianas { grid-area: percianas; }
+  .galeria__percianas { grid-area: galeria__percianas; }
   
-  .puerta { grid-area: puerta; }
+  .galeria__puerta { grid-area: galeria__puerta; }
   
-  .ventanasimple { grid-area: ventanasimple; }
+  .galeria__ventanasimple { grid-area: galeria__ventanasimple; }
   
-  .ventanas { grid-area: ventanas; }
+  .galeria__ventanas { grid-area: galeria__ventanas; }
   
-  .barandal { grid-area: barandal; }
+  .galeria__barandal { grid-area: galeria__barandal; } */
   
 
 /* FIN DE GRTID ALUMINIO y HERRERIA */
@@ -390,7 +478,7 @@ form {
  background-position: center;
 } 
 
-/* FIN DE CONTACTOS */
+/* FIN DE CONTACTOS*/
 
 
 /* FOOTER */
@@ -420,23 +508,23 @@ gap: 2rem;
 
 
 @media screen and (max-width: 750px){
-  .contenedora {
+  .container{
       display: grid;
-      grid-template-columns: 1fr 1fr ;
-      grid-template-rows: 1fr 1fr ;
+      grid-template-columns: 1fr  ;
+      grid-template-rows: 1fr 1fr 1fr  ;
       gap: 1em;
       grid-auto-flow: row;
       grid-template-areas:
-        "bienvenida bienvenida "
-        "trabajos trabajos"
-        "presentacion presentacio";
+        "bienvenida "
+        "trabajos"
+        "presentacion";
     }
   
     .bienvenida { grid-area: bienvenida; }
     
     .trabajos { grid-area: trabajos; }
     
-    .presentacion{ grid-area: presentacion;}
+    .presentacion { grid-area: presentacion;}
     
   }
 
@@ -447,7 +535,3 @@ gap: 2rem;
   gap: 2rem;
   }
 }
-
-
- 
-  
