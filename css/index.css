@@ -21,21 +21,18 @@ img {
   width: 100%;
   
 }
- .header__logo {
-  width: 100%;
-  height: 100%;
-}
 
 /* COMIENZO DEL HEADER */
 
 body header {
-display: flex;
-background-color: #665656;
-justify-content:space-around;
-padding: 20px 0;
-align-items: center;
-border-bottom: 2px solid black;
-
+  
+  display: flex;
+  background-color: #665656;
+  justify-content:space-around;
+  padding: 20px 0;
+  align-items: center;
+  border-bottom: 2px solid black;
+  
 }
 
 header nav  .menu{
@@ -53,6 +50,10 @@ header .navegacion{
 header .header__logo {
   flex-basis: 20%;
   
+}
+.header__logo {
+ width: 100%;
+ height: 100%;
 }
 
 
@@ -117,12 +118,6 @@ header nav .menu {
 /*COMIENZO DEL INDEX */
 
 
-
-.fondo__completo {
-width: 100%;
-height: 50%;
-position:static
-}
 .bienvenida{
   width: 100%;
   height: 100%;
@@ -142,6 +137,7 @@ position:static
   .card { 
    margin-left: auto;
    margin-right: auto;
+   margin-top: 2rem;
    
   }
 
@@ -262,7 +258,7 @@ border: 2px solid black;
   
   }
  /* COMIENZO DE GRID INDEX */
-.container {
+.grilla {
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -320,130 +316,52 @@ border: 2px solid black;
 }
 
 .texto{
- width: 600px;; 
- height: 300px; 
- padding: 30px;
+  width: 600px;; 
+  height: 300px; 
+  padding: 30px;
 }
 /* FIN DE LA PAGINA NOSOTROS*/
-     
- /* INICIO de ALUMINIO y HERRERIA */
 
-  .aluminio{
-     max-width:1200px;
-     height:100%;
-     margin: 0 auto;
-    
-    }
-   .seccion__aluminio {
-    padding: 50px;
-    font-size: 35px;
-    }    
-   
-    .d-block{
-      height:80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .carousel-control-prev{
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .carousel-control-next{
-      margin-left: auto;
-      margin-right: auto;
-    }
-   /* .galeria .galeria__panel .galeria__imagen:hover{
-  
-    transform: scale( 1.2 );
-   
-  }
-  
-  .galeria .galeria__percianas .galeria__imagen:hover {
-  
-    transform: scale( 1.2 );
-   
-    } 
-    
-    
-    .galeria .galeria__ventanasimple .galeria__imagen:hover{
-    
-      
-      transform: scale( 1.2 );
-          
-    } 
-    
-    .galeria .galeria__ventanas .galeria__imagen:hover{
-    transform: scale( 1.2 );
-       
-    }  
-  
-    .galeria .galeria__imagen{
-     width: 100%;
-     height:100%;
-     transition: transform 0.7s;
-   
-    
-    }  */
+/* INICIO de ALUMINIO y HERRERIA */
 
-.herreria__grilla{
-  width:100%;
-  height:100%;
-  border:2px solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.seccion__aluminio {
+  padding: 50px;
+  font-size: 35px;
+}    
+
+.d-block{
+  height:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-control-prev{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.herreria__separador{
-  width:200px; 
-  height:200px;
-  padding: 5px auto;
-  margin-left:auto;
-  margin-right:auto ;
-  
+.carousel-control-next{
+  margin-left: auto;
+  margin-right: auto;
 }
-    
+
+
 #carouselExampleInterval{
   height: 500px;
   width: 700px;
   margin-left: auto;
   margin-right: auto;
   
-
-
+  
+  
 }
-       
-    /* INICIO GRID DE ALUMINIO y HERRERIA  */
- /* .galeria { 
-    width:100%;
-    height: 100%;  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    gap: 2em 2em;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "galeria__barandal galeria__barandal galeria__panel galeria__panel galeria__percianas galeria__percianas"
-      "galeria__puerta galeria__puerta galeria__ventanasimple galeria__ventanasimple galeria__ventanas galeria__ventanas";
-  }
-  
-  .galeria__panel { grid-area: galeria__panel; }
-  
-  .galeria__percianas { grid-area: galeria__percianas; }
-  
-  .galeria__puerta { grid-area: galeria__puerta; }
-  
-  .galeria__ventanasimple { grid-area: galeria__ventanasimple; }
-  
-  .galeria__ventanas { grid-area: galeria__ventanas; }
-  
-  .galeria__barandal { grid-area: galeria__barandal; } */
-  
 
-/* FIN DE GRTID ALUMINIO y HERRERIA */
+.carousel-control-next{
+  width: 50%;
+}
 
-/* FIN DE ALUMINIO Y HERRERAIA */
+.carousel-control-prev{
+  width: 50%;
+   }
 
 /* INICIO DE CONTACTO */
 
@@ -483,12 +401,15 @@ form {
 
 /* FOOTER */
 
-.footer{
-  width:100%;
+footer{
+  width: 100vw;
   height:100%;
   background-color: moccasin;
   font-size: 20px;
   display:flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
   flex-direction: row;
   justify-content: space-evenly;
 
@@ -498,40 +419,96 @@ form {
 /* FIN DEL FOOTER*/
 /* media */
 
-@media screen and (max-width: 1270px) {
-  header{
-flex-direction:column;
-gap: 2rem;
-
-}
- }
-
-
-@media screen and (max-width: 750px){
-  .container{
-      display: grid;
-      grid-template-columns: 1fr  ;
-      grid-template-rows: 1fr 1fr 1fr  ;
-      gap: 1em;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "bienvenida "
-        "trabajos"
-        "presentacion";
-    }
-  
-    .bienvenida { grid-area: bienvenida; }
-    
-    .trabajos { grid-area: trabajos; }
-    
-    .presentacion { grid-area: presentacion;}
-    
+@media 
+(max-width: 992px){
+  .grilla{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr  ;
+    gap: 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "bienvenida "
+    "trabajos"
+    "presentacion";
   }
+  
+  .bienvenida { grid-area: bienvenida; }
+  
+  .trabajos { grid-area: trabajos; }
+  
+  .presentacion { grid-area: presentacion;}
+  
+}
 
 @media screen and (max-width: 1100px){ 
   header nav .menu {
     display:flex;
     flex-direction:column;
-  gap: 2rem;
+    font-size: 40px;
+    gap: 2rem;
   }
+}
+@media  (max-width:750px)  {
+    header {
+
+    display:flex;
+    width: 100vw;
+    flex-direction:column;
+    flex-basis: 100%; 
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 2rem;
+  }
+  
+}
+@media  (max-width:534px)  {
+  header {
+
+  display:flex;
+  width: 598px;
+  flex-direction:column;
+   flex-basis: 100%; 
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+}
+
+@media  (max-width:534px)  {
+  header {
+
+  display:flex;
+  width: 598px;
+  flex-direction:column;
+   flex-basis: 100%; 
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+
+@media (max-width:925px){ 
+  .seccion__aluminio{
+   width: auto;
+    flex-basis: 100%;
+    flex-wrap: 1;
+    font-size: 20px; 
+  }
+  
+}
+
+@media  (max-width:534px)  {
+  footer {
+
+  display:flex;
+  width: 598px;
+  flex-direction:column;
+   flex-basis: 100%; 
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+}
+
 }
