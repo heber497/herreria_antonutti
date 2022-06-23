@@ -1,3 +1,20 @@
+:root {
+         /* colors */
+          --primary: #87847A;
+          --secondary: #665656;
+          --alternative: moccasin;
+
+         /* spacings */
+            --spacings-medium:2em;
+            --spacings-large:4em;
+         
+            /* font-family*/
+          --principal: 'Poppins', sans-serif;
+          --texto: Arial, Helvetica, sans-serif;
+}
+
+
+/* Normalize */
 *   {
   margin: 0;
   padding: 0;
@@ -7,15 +24,15 @@ html{
   font-size: 62.5%;
 }
 a{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--texto);
   text-decoration: none;
 }
 body {
   width: 100%;
   height: auto;
   background-size:cover;
-  background-color:#87847A;
-  font-family: 'Poppins', sans-serif;
+  background-color:var(--primary);
+  font-family: var(--principal);
 }
 img {
   width: 100%;
@@ -27,7 +44,7 @@ img {
 body header {
   
   display: flex;
-  background-color: #665656;
+  background-color: var(--secondary);
   justify-content:space-around;
   padding: 20px 0;
   align-items: center;
@@ -37,7 +54,7 @@ body header {
 
 header nav  .menu{
   display: flex;
-  gap: 2em;
+  gap:var(--spacings-medium);
 }
 
 header .navegacion{
@@ -75,7 +92,7 @@ box-shadow:
 }
 
 header nav .menu {
-  background-color: moccasin;
+  background-color: var(--alternative);
   border: solid;
   font-size: 40px; 
   padding: 10px;
@@ -96,57 +113,77 @@ header nav .menu {
 }
 
 .solucion {
-  color: moccasin;
+  color: var(--alternative);
   font-size: 40px;
   padding: 2px;
   margin: 5px; 
 }
 
-  section h2 {
- font-size: 40px;
- padding: 5px;
- margin: 5px; 
- justify-items:center;
-}
+section h2 {
+  font-size: 40px;   
+  padding: 5px;
+  margin: 5px; 
+  justify-items:center;
+} 
 
- 
+
 
 /* FIN DEL HEADER */
 
 
 
 /*COMIENZO DEL INDEX */
+/* COMIENZO DE GRID INDEX */
 
-
-.bienvenida{
+.grilla {
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows:  1fr 0.5fr;
+   gap: 2rem 2rem;
+   align-items: center;
+   grid-auto-flow: row;
+   grid-template-areas:
+     "bienvenida bienvenida trabajos"
+     "presentacion presentacion presentacion";
+    }
+    
+    
+    
+    
+    
+    .bienvenida{
   width: 100%;
   height: 100%;
   font-size: 30px;
   display: grid;
   justify-items: center;
-} 
+}   
+
 
 .entrada__baner{
   width: 100%;
   height: 100%;
   
- 
   
-  }
- 
-  .card { 
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 2rem;
-   
-  }
+  
+}
+
+.card { 
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 2rem;
+  
+} 
 
 .card-body{
-  background-color: #665656;
+  background-color: var(--secondary);
   font-size: 35px;
   border: solid 2px black;
- 
-}
+  
+}  
 
 
 .trabajos {
@@ -157,7 +194,7 @@ header nav .menu {
   display: grid;
   justify-items: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-}
+}  
 
 
 .trabajos__cartas{
@@ -166,8 +203,8 @@ header nav .menu {
   align-self: stretch;
   background-size:cover;
   
-
-}
+  
+}  
 
 .trabajos__soldador{
   width: 300px;
@@ -175,12 +212,12 @@ header nav .menu {
   margin: 20px;
   padding: 24px;
   background: rgba( 255, 255, 255, 0 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-border: 2px solid black;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );  
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 2px solid black;
   
   
 }
@@ -191,13 +228,13 @@ border: 2px solid black;
   margin: 20px;
   padding: 24px;
   background: rgba( 255, 255, 255, 0 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-border: 2px solid black;  
- 
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );  
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 2px solid black;  
+  
 }
 
 .trabajos__regla {
@@ -206,93 +243,76 @@ border: 2px solid black;
   margin: 20px;
   padding: 24px;
   background: rgba( 255, 255, 255, 0 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-border: 2px solid black;  
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );  
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 2px solid black;  
   
 }
 
 .trabajos__titulo{
- margin:25px;
- font-size: 40px;
+  margin:25px; 
+  font-size: 40px;
   
-}
+} 
 
 .trabajos__texto {
   margin: 25px;
   font-size: 15px;
-}
+}  
 
 
-  .presentacion {
-    width:100%; 
-    height:100%;
-    display:grid;
-    justify-items: center;
-    
-    
-
+.presentacion {
+  width:100%; 
+  height:100%;
+  display:grid;
+  justify-items: center;
   
-  }
+  
+  
+  
+}  
 
 .presentacion__pregunta {
   font-size: 50px;
   
- }
+} 
 
 
 .presentacion__perforando {
   width: 75%;
   height: 75%;
- 
   
-}
+  
+}  
 
 .presentacion__resenia {
   font-size: 20px;
   width: 100%;
   height: 100%; 
   
-  }
- /* COMIENZO DE GRID INDEX */
-.grilla {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 0.5fr;
-    gap: 2rem 2rem;
-    align-items: center;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "bienvenida bienvenida trabajos"
-      "presentacion presentacion presentacion";
-  }
+} 
 
-  .bienvenida { grid-area: bienvenida; }
-  
-  .trabajos { grid-area: trabajos; }
-  
-  .presentacion { grid-area: presentacion; }
+.bienvenida { grid-area: bienvenida; }
 
+.trabajos { grid-area: trabajos; }
 
+.presentacion { grid-area: presentacion; }
 
 /* FIN DEL INDEX */
 
 /*COMIENZO DE LA PAGINA NOSOTROS*/
 #nosotros {
- width: 100%;
- height: 100%;
- margin-left: 0 auto;
- margin-right: 0 auto;
- font-size: 30px;
- display:flex;
- flex-direction: column;
- justify-content:center ;
+  width: 100%;
+  height: 100%;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  font-size: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
 }
 
 .contenedor {
@@ -404,7 +424,7 @@ form {
 footer{
   width: 100vw;
   height:100%;
-  background-color: moccasin;
+  background-color: var(--alternative);
   font-size: 20px;
   display:flex;
   flex-grow: 1;

@@ -1,0 +1,17 @@
+/*MISC */
+  
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+
+/*PARTIAL*/
+ @import './partials/header';
+ @import './partials/footer';
+
+/*PAGES*/
+@import './pages/inicio';
+@import './pages/nosotros';
+@import './pages/aluminio';
+@import './pages/herreria';
+@import './pages//contacto';
+
