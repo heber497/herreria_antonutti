@@ -6,10 +6,23 @@
     $secondary: #665656;
     $alternative: moccasin;
 
-   /* spacings */
-      $spacings-medium:2em;
-      $spacings-large:4em;
-   
-      /* font-family*/
+
+    
+    /* font-family*/
     $principal: 'Poppins', sans-serif;
     $texto: Arial, Helvetica, sans-serif; 
+    
+    /* spacings */
+      $spacings-medium:2em;
+      $spacings-large:4em;
+
+      $spacings:(  
+       spacings-medium:2em,
+       spacings-large:4em,
+      ) ;
+
+      @each $key, $val in $spacings {
+        .#{$key} { 
+        padding: #{$val};
+      }
+       }

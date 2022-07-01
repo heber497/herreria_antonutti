@@ -1,0 +1,16 @@
+.flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-around; 
+}
+
+
+
+@mixin flex ($dir, $jus,) {
+   display: flex;
+   flex-direction: $dir;
+   justify-content: $jus;
+
+   
+}
+

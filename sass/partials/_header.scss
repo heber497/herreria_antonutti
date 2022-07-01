@@ -1,13 +1,12 @@
 header {
     display: flex;
     background-color: #665656;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 20px 0;
     align-items: center;
     border-bottom: 2px solid black;
     
     
-      
         .navegacion{
         flex-basis: 80%;
         display:flex;
@@ -23,7 +22,6 @@ header {
        width: 100%;
        height: 100%;
       }
-      
       
       .header__img {
       max-width: 200px;
@@ -44,7 +42,7 @@ header {
       
         nav .menu {
         display: flex;
-        gap: 2em;
+        gap: map-get($spacings , $spacings-medium );
         background-color: moccasin;
         border: solid;
         font-size: 40px; 

@@ -67,29 +67,19 @@
             height: 300px;
             margin: 20px;
             padding: 24px;
-            background: rgba( 255, 255, 255, 0 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );  
-            backdrop-filter: blur( 20px );
-            -webkit-backdrop-filter: blur( 20px );
-            border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
-            border: 2px solid black;
+            @extend .box-shadow;
             
             
           }
           
           &__perfil{
+          
+              
             width: 300px;
             height: 300px;
             margin: 20px;
             padding: 24px;
-            background: rgba( 255, 255, 255, 0 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );  
-            backdrop-filter: blur( 20px );
-            -webkit-backdrop-filter: blur( 20px );
-            border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
-            border: 2px solid black;  
+            @extend .box-shadow;
             
           }
           
@@ -98,16 +88,20 @@
             height: 300px;
             margin: 20px;
             padding: 24px;
+            @extend .box-shadow;
+          
+            
+          }
+          .box-shadow { 
             background: rgba( 255, 255, 255, 0 );
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );  
             backdrop-filter: blur( 20px );
             -webkit-backdrop-filter: blur( 20px );
             border-radius: 10px;
             border: 1px solid rgba( 255, 255, 255, 0.18 );
-            border: 2px solid black;  
-            
+            border: 2px solid black; ;
           }
-          
+
           &__titulo{
             margin:25px; 
             font-size: 40px;
