@@ -1,65 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto/herreria antonutti</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="icon" type="jpg" href="../img/logo.navegador.png">
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>aluminio/herreria antonutti</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+     <link rel="stylesheet" href="../css/index.css">
+     <link rel="icon" type="jpg" href="../img/logo.navegador.png">
 </head>
 
 <body>
-    <header>
-        <picture class="header__logo">
-           <img img class="header__img" src="../img/logo.png" alt="logo de herreria amtonutti">
-        </picture>
-        <nav class="navegacion">
-            <ul class="menu">
-                 <li class="menu__list">
-                     <a class="menu__link" href="../index.html">inicio</a></li>
-                 <li class="menu__list">
-                     <a class="menu__link" href="./nosotros.html">nosotros</a></li>
-                 <li class="menu__list">
-                     <a class="menu__link" href="./aluminio.html">aluminio</a></li>
-                 <li class="menu__list">
-                     <a class="menu__link" href="./herreria.html">herreria</a></li>
-                 <li class="menu__list">
-                     <a class="menu__link" href="./contactos.html">contactos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="contenedora">        
-         <section id="contacto">
-                  <h2>Nos encantaria saber mas de vos!manda tus datos y nos comunicaremos lo mas rapido posible.muchas gracias.</h2>
-                  <img class="llamada" src="../img/nosotros.llamada.jpg" alt="mujer hablando por telefono">
-                  <div class="formulario">
-                       <form action="" method="get">
-                             <label for="nombre">nombre:</label>
-                             <input type="text" name="nombre" placeholder="nombre" >
-                             <br>
-                             <label for="apellido">apellido:</label>
-                             <input type="text" name="apellido" placeholder="apellido">
-                             <br>
-                             <label for="correo">email:</label>
-                             <input type="email" name="correo" placeholder="correo">
-                             <br>
-                             <label for="telefono">telefono:</label>
-                             <input type="tel" name="telefono" placeholder="telefono">
-                             <br>
-                             <input type="submit" value="enviar">
-                       </form>
-                  </div>      
-        </section>  
-     </main>             
-    <footer class="footer">
-        <section >
-                <div class="encabezado">            
-                                       <h3 class="encabezado__horarios">horarios: de lunes a viernes de 08:00 AM a 19:00 PM</h3>
-                                       <h3 class="encabezado__direccion">direcion:calle123</h3>
-                </div>   
-               <p>esta pagina web es sin fines de lucro . todos los derechos reservados</p>
-        </section>
-    </footer>
-</body>
-</html>
+  <header>
+    <picture class="header__logo">
+       <img class="header__img" src="../img/logo.png" alt="logo de herreria amtonutti">
+    </picture>
+    <nav class="navbar navbar-expand-md  navbar-dark">
+        <button id="boton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span id="navegacion" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aluminio.html">aluminio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="herreria.html">herreria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactos.html">Contactos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>         
+</header>
+    <main>      
+              <section class="contacto">
+                
+                  <div class="formulario gradient-border">
+                    <article class="venta animate__fadeInUpBig">
+                      <h2 >Nos encantaria saber en que te podemos ayudar. solicita tu presupuesto sin cargo en el siguiente formulario con tus datos y nos comunicaremos lo mas rapido posible. Muchas gracias.</h1>
+                      <img class="llamada" src="../img/nosotros.llamada.jpg" alt="mujer hablando por telefono">
+                      </article>
+                    <form action="enviar.php" method="post">
+                        <input class="nombre" type="text" required placeholder=" Nombre">
+                        <input class="apellido" type="text" required placeholder=" Apellido">
+                        <input class="mail" type="email" required placeholder=" Ingresa tu mail">
+                        <input class="telefono" type="number" required placeholder=" Telefono">
+                        <textarea class="mensaje" name="mensaje" id="" cols="30" rows="10" required
+                            placeholder=" Mensaje..."></textarea>
+                        <input id="enviar" type="submit" value="Enviar">
+                    </form>
+                </div>
+              
+              </section>
+    </main> 
+
+    <footer>
+      <section>
+              <div class="encabezado">            
+                                     <h3 class="encabezado__horarios">horarios: de lunes a viernes de 08:00 AM a 19:00 PM</h3>
+                                     <h3 class="encabezado__direccion">direcion:calle123</h3>
+              </div>
+              <div class="alert alert-danger" role="alert">
+             <p>esta pagina web es sin fines de lucro . todos los derechos reservados </p>
+          </div>
+  
+      </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+   </script>
+  
+  
+  </body>
+  </html>
