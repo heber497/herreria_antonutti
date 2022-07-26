@@ -1,0 +1,56 @@
+#nosotros {
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: $spacings-medium;
+    margin-top: $spacings-medium;
+    
+    .contenedor {
+        flex-direction:row;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top:$spacings-medium;
+
+        
+        .contenedor__diseñador {
+         width: 400px;
+         height: 300px;
+        }
+
+        .contenedor__equipo {
+          width:400px;
+          height:300px;
+          gap: $spacings-large;
+        }
+       
+        .contenedor__titulo {
+          color: $alternativo;
+          font-size: 30px;
+          padding: 2px;
+          margin: 5px;
+          gap:$spacings-medium; 
+        }
+        
+        .contenedor__parrafo { 
+          width: 500px;; 
+          height: 300px; 
+          padding: 15px;
+        font-size: 25px;
+        }
+
+    }
+}
+   
+  
+  
+  
+  
+  

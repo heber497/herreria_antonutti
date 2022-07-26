@@ -1,24 +1,25 @@
- /*Normalize*/  
+/* Normalize */
 *   {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-  }
-  html{
-    font-size: 62.5%;
-  }
-  a{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-  }
-  body {
-    width: 100%;
-    height: auto;
-    background-size:cover;
-    background-color:#87847A;
-    font-family: 'Poppins', sans-serif;
-  }
-  img {
-    width: 100%;
-    
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html{
+  font-size: 62.5%;
+ 
+}
+a{
+  font-family: var(--texto);
+  text-decoration: none;
+}
+ html body {
+  width: 100%;
+  height: auto;
+  background-size:cover;
+  background-color:var(--primario);
+  font-family: var(--principal);
+}
+img {
+  width: 100%;
+  
+}

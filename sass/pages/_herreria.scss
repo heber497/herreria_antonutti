@@ -1,0 +1,126 @@
+
+.div__aluminio__herreria {
+    display: flex;
+    padding:15px;
+    margin-top: 20px;
+    margin-bottom:$spacings-medium;
+    
+    .aluminio__herreria__titulo {
+      color: $alternativo;
+      font-size: 50px;
+      padding: 2px;
+      margin: 5px;
+      gap: $spacings-medium;
+      margin-top: 20px;
+      
+      
+    } 
+    
+    .herreria__texto  {
+      font-size: 40px;
+      padding: 2px;
+      gap: $spacings-medium;
+      margin-bottom:$spacings-medium; 
+    } 
+  } 
+  
+  .caja__titulo{
+      color: $alternativo;
+      display:flex;
+      justify-content: center;
+      margin-bottom: $spacings-medium;
+      
+  }
+
+    .caja{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2em;
+  
+    
+    .cuadro{
+        height: auto;
+        width: 300px;
+        font-family: $texto;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 15%;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        .cuadro__img {
+          height:100%;
+          width:100%;
+          display: flex;
+          padding: 5px;
+          object-fit: cover;
+         }
+         .cuadro__titulo {
+          width: 100%;
+          font-size: 25px;
+          font-family:$texto;
+          padding: 10px;
+          display: flex;
+          justify-content: center
+        
+         }
+         .cuadro__texto {
+          width: 100%;
+          font-size: 20px;
+          font-family:$texto;
+          padding: 10px;
+          margin-left:0;
+          margin-right:0;
+          display: flex;
+          justify-content: center
+        
+         }
+        
+       
+        
+
+        
+    } 
+
+
+}
+  
+
+.galeriaherreria{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: row;
+  flex-basis: 33%;
+  justify-content: space-around;
+  flex-grow: 1;
+  gap: 2rem;
+  flex-shrink: 1;
+  flex-flow: row wrap;
+  margin-bottom: 25px;
+ 
+  .imgherreria{
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: $spacings-medium;
+    padding: 5px;
+   
+    .imgherreria__cuadro{
+     border: #1d1b1b solid 1px;
+     transition: all 0.5s;
+     
+     .imgherreria .imgherreria__cuadro:hover {
+       transform: scale(1.2);
+       transition: 0.3s;
+   
+      }
+      }
+     }
+   }
+  
