@@ -1,29 +1,26 @@
 
    /*Variables*/ 
-   
+
    /* colors */
     $primario: white;
     $secundario:  #e7dfcf;
     $alternativo:  #f1c477;
     $titulo: hsl(45, 100%, 41%);
-
-
     
     /* font-family*/
     $principal: 'Poppins', sans-serif;
     $texto: Arial, Helvetica, sans-serif; 
     
     /* spacings */
-      $spacings-medium:2em;
-      $spacings-large:4em;
-
-      $spacings:(  
-       spacings-medium:2em,
-       spacings-large:4em,
-      ) ;
-
-      @each $key, $val in $spacings {
-        .#{$key} { 
-        padding: #{$val};
+    $spacings-medium:2em;
+    $spacings-large:4em;
+    $spacings:(  
+    spacings-medium:2em,
+    spacings-large:4em, 
+    ) ;
+    
+    @each $key, $val in $spacings {
+     .#{$key} { 
+    padding: #{$val};
       }
        }

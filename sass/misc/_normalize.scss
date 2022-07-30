@@ -5,19 +5,19 @@
   box-sizing: border-box; 
 }
 html{
-  font-size: 62.5%;
+  font-size:62.5%;
  
 }
 a{
-  font-family: var(--texto);
+  font-family: $texto;
   text-decoration: none;
 }
  html body {
   width: 100%;
   height: auto;
   background-size:cover;
-  background-color:var(--primario);
-  font-family: var(--principal);
+  background-color:$primario;
+  font-family: $principal;
 }
 img {
   width: 100%;

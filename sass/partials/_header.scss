@@ -35,8 +35,7 @@ body header {
     }
   
   .navbar {
-    background-color:var();
-    font-size: 35px;
+   font-size: 35px;
   
     #boton {
       border-color: #727272;
@@ -46,51 +45,56 @@ body header {
      justify-content: center;
      height: 100%;
      width: 100%;
-     display: flex;
+     
      
     
      .navbar-nav li {
        position: relative;
        color: #1d1b1b;
        
-     
-     }
-     
-   
-     .navbar-nav li::before { 
-       content: "";
-       height: 3px;
-       width: 0%;
-       background: $secundario;
-       position: absolute;
-       left: 18px;
-       bottom: 7px;
-       transition: 0.3s ease-out;
-     }
-     
-     .navbar-nav li:hover::before {
-       width: 70%;
-     }
-     header .navbar-dark .navbar-nav .nav-link {
-      color: #1d1b1b;
-       }
-    
-    
-    
-
-
+      }
+      
+      
+      .navbar-nav li::before { 
+        content: "";
+        height: 3px;
+        width: 0%;
+        background: $secundario;
+        position: absolute;
+        left: 18px;
+        bottom: 7px;
+        transition: 0.3s ease-out;
+      }
+      
+      .navbar-nav li:hover::before {
+        width: 70%;
+      }
+      
+      
+      
+      
+      
     }
-  
-  
-  
+    
+    
+    
   }
   
-
+  
 }
+h2 {
+  font-size: 40px;   
+  padding: 5px;
+  margin: 5px; 
+  justify-items:center;
+} 
 
 
 
 
+.navbar-dark .navbar-nav .nav-link { 
+   color: #1d1b1b;
+    }
 
 
 
